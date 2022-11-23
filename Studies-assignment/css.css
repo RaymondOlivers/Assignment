@@ -1,0 +1,237 @@
+.grid-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr)
+}
+
+html, body {
+    background-color: rgb(182, 240, 182);
+}
+
+.header {
+    grid-column: 2 / -1;
+    background-color: rgb(182, 240, 182);
+    text-align: center;
+    font-size: 400%;
+}
+
+@media (min-width: 0px) {
+    .menu{
+        display: block;
+        background-color: #333;
+        padding: 0px;
+        font-size: larger;
+        font-style: normal;
+    }
+
+    .home a{
+        text-decoration: none;
+        color: azure;
+        padding: 0px
+    }
+
+    .home a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .gardening a{
+        text-decoration: none;
+        color: azure;
+        padding: 0px
+    }
+
+    .gardening a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .foodforest a{
+        text-decoration: none;
+        color: azure;
+        padding: 0px
+    }
+
+    .foodforest a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .foraging a{
+        text-decoration: none;
+        color: azure;
+        padding: 0px
+    }
+
+    .foraging a:hover {
+        text-decoration: underline;;
+        color: rgb(182, 240, 182);
+    }
+
+    .whoweare a{
+        text-decoration: none;
+        color: azure;
+        padding: 0px
+    }
+
+    .whoweare a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .contact a{
+        text-decoration: none;
+        color: azure;
+        padding: 0px
+    }
+
+    .contact a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+}
+
+@media (min-width: 600px) {
+    .menu{
+        display: flex;
+        background-color: #333;
+        padding: 10px;
+        font-size: larger;
+        font-style: normal;
+    }
+    .home a{
+        text-decoration: none;
+        color: azure;
+        padding: 10px
+    }
+
+    .home a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .gardening a{
+        text-decoration: none;
+        color: azure;
+        background-color: rgb(32, 31, 31);
+        padding: 10px
+    }
+    .gardening a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .foodforest a{
+        text-decoration: none;
+        color: azure;
+        padding: 10px
+    }
+
+    .foodforest a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .foraging a{
+        text-decoration: none;
+        color: azure;
+        background-color: rgb(32, 31, 31);
+        padding: 10px
+    }
+
+    .foraging a:hover {
+        text-decoration: underline;;
+        color: rgb(182, 240, 182);
+    }
+
+    .whoweare a{
+        text-decoration: none;
+        color: azure;
+        padding: 10px
+    }
+
+    .whoweare a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .contact a{
+        text-decoration: none;
+        color: azure;
+        padding: 10px
+    }
+
+    .contact a:hover {
+        text-decoration: underline;
+        color: rgb(182, 240, 182);
+    }
+
+    .contact {
+        margin-left: auto;
+    }
+}
+
+.mission {
+    grid-column: 1 / -1;
+    background-color: rgb(182, 240, 182);
+    padding: 20px;
+    margin: 10px 0;
+    color: #666;
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+    
+    border-left: 10px solid rgb(54, 53, 53);
+    padding-left: 50px;
+}
+
+@media (min-width: 0px) {
+    .columns {
+        grid-column: 1 / -1;
+        border-radius: 25px 25px 0px 0px;
+        background-color: rgb(238, 250, 235);
+        text-align: center;
+        float: left;
+        width: 100%
+    }
+}
+
+@media (min-width: 600px) {
+    .columns {
+        grid-column: 1 / -1;
+        border-radius: 25px 25px 0px 0px;
+        background-color: rgb(238, 250, 235);
+        text-align: center;
+        float: left;
+        width: 33.3%
+    }
+}
+
+.mission2 {
+    grid-column: 1 / -1;
+    background-color: rgb(182, 240, 182);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #666;
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+    padding-right: 50px, 50px, 50px, 0px;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    position: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.form {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
